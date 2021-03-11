@@ -10,28 +10,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/nasa.main.js"></script>
+    <script src="./js/nasa.details.js"></script>
     <title>NASA</title>
-    
+
 </head>
 
 <body>
 
-    <div class="main-container">
-        <div class="container ">
+    <div class="container">
+        <div class="mt-4">
+            <a class="text-light" href="/" > 👈🏻 Go Back</a>
+           </div>
+        <div class="d-flex align-items-center  mt-4 pt-4">
+           
+            <img id='search-logo' src="./assets/nasa.png"    alt='nasa-logo' />
+
+        </div>
+       
+     
+      
+        <h1 id="search-results-text" class="text-light mt-4">Search Results</h1>
+        <div class="row main-content">
             <div class="d-flex align-items-center justify-content-center mt-4 pt-4">
-                <img id='main-header-logo' src="./assets/nasa.png" alt='nasa-logo' />
+                <div class="spinner-border text-light" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
             </div>
-        
-            <div class="main-search input-group mb-3 mt-4">
-                <input value="Perseverance" type="text" class="form-control" id="search-input" placeholder="Search in Nasa media library" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-light" type="button" id="search-button">Search</button>
-              </div>
-        
-        
-            </div>      
+        </div>
     </div>
-<!-- Bootstrap Js -->
+    <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>

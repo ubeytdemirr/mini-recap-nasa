@@ -16,10 +16,11 @@ body{
 
 
 #search-logo{
-    position:absolute;
+    position:fixed;
     bottom:50px;
     left:50px;
     width:100px;
+    z-index: 990;
 }   
 
 
@@ -52,6 +53,7 @@ body{
     background:var(--main-bg-color);
     color:var(--main-text-color);
     transition:0.2s;
+    margin-bottom:50px;
 }
 
 .card img {
